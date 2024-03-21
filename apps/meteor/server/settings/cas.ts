@@ -10,6 +10,7 @@ export const createCasSettings = () =>
 			values: [
 				{ key: '1.0', i18nLabel: '1.0' },
 				{ key: '2.0', i18nLabel: '2.0' },
+				{ key: '3.0', i18nLabel: '3.0' },
 			],
 			group: 'CAS',
 		});

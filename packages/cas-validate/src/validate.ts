@@ -168,7 +168,8 @@ export function validate(options: CasOptions, ticket: string, callback: CasCallb
 	}
 
 	const { hostname, port = '443', pathname = '' } = casUrl;
-	const validatePath = version < 2.0 ? 'validate' : 'proxyValidate';
+	const validatePath = version < 3.0 ? (version < 2.0 ? 'validate' : 'proxyValidate') : 'p3/proxyValidate';
+
 
 	const query = {
 		ticket,
